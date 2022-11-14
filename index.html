@@ -3,7 +3,10 @@
 <html lang="en-ca">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="guessing a random number with a slider webpage" />
+    <meta
+      name="description"
+      content="guessing a random number with a slider webpage"
+    />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="sophie nguyen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,26 +68,32 @@
           height="25%"
         />
 
-        <div id="slider-value">
-          ?
-        </div>
+        <div id="slider-value">?</div>
 
         <!-- Default Slider -->
         <label>
           Slider's Value
-          <input  id="slider" class="mdl-slider mdl-js-slider" type="range"
-          min="0" max="100" value="0" tabindex="0" onchange="updateSliderValue(this.value)">
+          <input
+            id="slider"
+            class="mdl-slider mdl-js-slider"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            tabindex="0"
+            onchange="updateSliderValue(this.value)"
+          />
         </label>
-        
-        <br>
-        <br>
+
+        <br />
+        <br />
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
           are you right??
         </button>
-        
+
         <div id="answer"></div>
       </main>
     </div>
