@@ -13,9 +13,21 @@ if (navigator.serviceWorker) {
   })
 }
 
+const randomNumber = Math.floor(Math.random() * 6) + 1  // returns a random integer from 1 to 6 into variable "randomNumber" 
+
 /**
  * this function updates slider value
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
+
+  if (valueFromSlider == randomNumber) {
+    document.getElementById("answer").innerHTML = "you got it! Great job! Bet you can't do it twice though!"
+  }
+
+  if (valueFromSlider != randomNumber) {
+    document.getElementById("answer").innerHTML = "HA,HA! You thought... lol"
+  }
 }
+
+
