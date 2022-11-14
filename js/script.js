@@ -1,5 +1,5 @@
 // Created by: sophie
-// Created on: oct 2020
+// Created on: nov 2022
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -14,8 +14,8 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * this function
+ * this function updates slider value
  */
-function myButtonClicked() {
+function updateSliderValue(valueFromSlider) {
   document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
 }
