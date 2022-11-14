@@ -17,5 +17,5 @@ if (navigator.serviceWorker) {
  * this function updates slider value
  */
 function updateSliderValue(valueFromSlider) {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("slider-value").innerHTML = valueFromSlider
 }
