@@ -21,12 +21,18 @@ const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integ
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 
-  if (valueFromSlider == randomNumber) {
+}
+
+function myButtonClicked() {
+  
+   const sliderNumber = parseInt(document.getElementById("slider").value)
+  
+  if (sliderNumber == randomNumber) {
     document.getElementById("answer").innerHTML =
       "you got it! Great job! Bet you can't do it twice though!"
   }
 
-  if (valueFromSlider != randomNumber) {
-    document.getElementById("answer").innerHTML = "HA,HA! You thought... lol"
+  if (sliderNumber != randomNumber) {
+    document.getElementById("answer").innerHTML = "HA,HA! You thought... lol. by the way, you're wrong"
   }
 }
