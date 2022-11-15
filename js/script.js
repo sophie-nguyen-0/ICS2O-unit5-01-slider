@@ -20,19 +20,18 @@ const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integ
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
-
 }
 
 function myButtonClicked() {
-  
-   const sliderNumber = parseInt(document.getElementById("slider").value)
-  
+  const sliderNumber = parseInt(document.getElementById("slider").value)
+
   if (sliderNumber == randomNumber) {
     document.getElementById("answer").innerHTML =
       "you got it! Great job! Bet you can't do it twice though!"
   }
 
   if (sliderNumber != randomNumber) {
-    document.getElementById("answer").innerHTML = "HA,HA! You thought... lol. by the way, you're wrong"
+    document.getElementById("answer").innerHTML =
+      "HA,HA! You thought... lol. by the way, you're wrong"
   }
 }
